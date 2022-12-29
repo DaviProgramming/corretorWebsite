@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root{
+    --font-family: 'Source Sans Pro', sans-serif;
+
+    --primary-color: #4592AF;
+    --secundary-color: #3E3939;
+
+    --black-color: #2C2727;
+    --white-color: #F6F4F4;
+    --grey-color:#d4d4d4;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--grey-color);
+    color: var(--white-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    background-color: var(--black-color);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--white-color);
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-content{
+    margin: 15px 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    width: 75px;
+}
+
+.navbar-logo img{
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    margin: 0px 25px;
+}
+
+.navbar li.active{
+    border-bottom: 3px solid var(--white-color);
+ 
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)) ,url(./assets/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: -2vh;
+    
+}
+
+
+.title-content h4{
+    color: var(--grey-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.title-content h1, .title-content h4, .container.about h3, .container.about p{
+    cursor: default;
+}
+
+
+.button{
+    border: 2px solid var(--white-color);
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: all 0.2s ease;
+    
+}
+
+
+.container.about{
+    background: var(--grey-color);
+}
+
+
+
+
+.container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.img-apresentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(black,black);
+    width: 250px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+.img-apresentation img{
+    width: 100%;
+}
+
+.text-apresentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 50%;
+    height: 100%;
+    color: var(--black-color);
+}
+
+.text-apresentation h3{
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.text-apresentation p{
+    font-size: 1.3rem;
+}
+
+.container.about .button{
+    background: var(--black-color);
+    border: var(--black-color);
+}
+
+.container.about .button:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
