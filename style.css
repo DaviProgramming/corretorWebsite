@@ -118,7 +118,7 @@ a{
     font-weight: 400;
 }
 
-.title-content h1, .title-content h4, .container.about h3, .container.about p{
+.title-content h1, .title-content h4, .container.about h3, .container.about p, .container.jobs h1{
     cursor: default;
 }
 
@@ -197,6 +197,8 @@ a{
     font-size: 1.3rem;
 }
 
+
+
 .container.about .button{
     background: var(--black-color);
     border: var(--black-color);
@@ -205,4 +207,42 @@ a{
 .container.about .button:hover{
     background: var(--primary-color);
     color: var(--white-color);
+}
+
+
+
+.container.jobs{
+    background:linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)), url(./assets/residencial__1_-67577.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container.jobs h1{
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.container.jobs .container-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.empreendimentos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: var(--black-color);
+}
+
+.empreendimento{
+    width: 25%;
+    height: 100%;
+   
+}
+
+.empreendimento:nth-child(2), .empreendimento:nth-child(4){
+    background: blue;
 }
