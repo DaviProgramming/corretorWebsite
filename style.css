@@ -212,15 +212,18 @@ a{
 
 
 .container.jobs{
-    background:linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)), url(./assets/residencial__1_-67577.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
 }
 
 .container.jobs h1{
     font-size: 3rem;
-    color: var(--white-color);
+    color: var(--black-color);
     font-weight: 600;
+    margin-bottom: 12vh;
 }
 
 .container.jobs .container-content{
@@ -230,11 +233,9 @@ a{
 
 .empreendimentos{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background: var(--black-color);
 }
 
 .empreendimento{
@@ -243,6 +244,22 @@ a{
    
 }
 
-.empreendimento:nth-child(2), .empreendimento:nth-child(4){
-    background: blue;
+.card{
+    -webkit-filter: grayscale(1) brightness(.7);
+    cursor: pointer;
+}
+
+.card:hover{
+    transition: 0.2s;
+    -webkit-filter: grayscale(0) brightness(1);
+}
+
+.empreendimento img{
+    width: 100%;
+}
+
+.container.contato h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--black-color);
 }
