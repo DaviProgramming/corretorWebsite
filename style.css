@@ -220,6 +220,7 @@ a{
 }
 
 .container.jobs h1{
+   
     font-size: 3rem;
     color: var(--black-color);
     font-weight: 600;
@@ -245,21 +246,156 @@ a{
 }
 
 .card{
-    -webkit-filter: grayscale(1) brightness(.7);
     cursor: pointer;
 }
 
-.card:hover{
+.card img{
+    -webkit-filter:  brightness(.4);
+    
+}
+
+.card:hover img{
     transition: 0.2s;
     -webkit-filter: grayscale(0) brightness(1);
 }
 
-.empreendimento img{
-    width: 100%;
-}
 
 .container.contato h1{
     font-size: 3rem;
     font-weight: 600;
     color: var(--black-color);
+}
+
+
+.owl-item img{
+    object-fit:cover;
+    width: 100%;
+    height: 70vh;
+    background: black;
+   
+}
+
+.card-infos{
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card-infos h2{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.card-infos p{
+    display: none;
+}
+
+.card:hover p{
+    display: flex;
+}
+
+.card:hover .card-infos{
+    background: linear-gradient(rgba(0, 0, 0, 0.055),rgba(0, 0, 0, 0.877));
+}
+
+.card-infos p{
+    width: 60%;
+   text-overflow: clip;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
+
+
+.container.contato .container-content{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container.contato .container-content h1{
+    margin-bottom: 7vh;
+}
+
+.infos{
+    cursor: default;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.info-containter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    color: var(--secundary-color);
+    text-transform: uppercase;
+   
+}
+
+.info-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 20%;
+}
+
+.info-body{
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+}
+
+.info-containter i{
+    font-size: 1.3rem;
+}
+
+.info-containter h3{
+    font-size: 1rem;
+}
+
+.info-containter.adress{
+    border-left: 3px solid var(--secundary-color);
+    border-right: 3px solid var(--secundary-color);
+    border-radius: 3px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+   
+}
+
+.social-medias i{
+    margin: 0px 10px;
+    font-size: 1.4rem;
+    color: var(--black-color);
+}
+
+.social-medias .fa-facebook-f{
+    font-size: 1.2rem;
 }

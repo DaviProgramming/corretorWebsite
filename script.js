@@ -14,8 +14,11 @@ $(document).ready(function () {
                 items: 3
             }
         },
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true
+       
     });
 })
+
+
+// autoplay: true,
+// autoplayTimeout: 2000,
+// autoplayHoverPause: true
