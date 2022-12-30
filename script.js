@@ -10,6 +10,13 @@ window.addEventListener('scroll', () =>{
 const startInteractive = () => {
     let getButtonNavbar = document.querySelectorAll('.navbar-link');
     getButtonNavbar.forEach(button => button.addEventListener('click', () => {NavbarConfig.changeButton(button)}))
+
+    let hamburguerButton = document.querySelector('.navbar-hamburguer');
+    hamburguerButton.addEventListener('click', ()=> {NavbarConfig.mobileOpen()})
+
+    let closeButton = document.querySelector('.navbar-close');
+    closeButton.addEventListener('click', () =>{NavbarConfig.mobileClose()})
+
 }
 
 const NavbarConfig = {
@@ -24,6 +31,14 @@ const NavbarConfig = {
         let buttonToActive = button;
         buttonToActive.classList.add('active');
 
+    },
+    mobileOpen(){
+        let navbar = document.querySelector('.navbar');
+        navbar.classList.add('show');
+    },
+    mobileClose(){
+        let navbar = document.querySelector('.navbar');
+        navbar.classList.remove('show');
     }
 }
 

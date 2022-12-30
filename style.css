@@ -94,6 +94,10 @@ a{
     display: none;
 }
 
+.navbar-close{
+    display: none;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -498,8 +502,39 @@ a{
         display: flex;
         cursor: pointer;
     }
+    
+    
 
+    .navbar.show .navbar-texts{
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        width: 100vw;
+        background-color: var(--black-color);
+        text-align: start;
+        justify-content: center;
+    }
 
+    .navbar.show ul{
+        flex-direction: column;
+    }
+
+    .navbar.show li.active{
+        border: none;
+        
+    }
+
+    .navbar.show li.active a{
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    .navbar.show .navbar-close{
+        display: flex;
+        cursor: pointer;
+        z-index: 2;
+    }
 
     
 }
