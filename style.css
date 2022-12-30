@@ -287,8 +287,6 @@ a{
 }
 
 
-
-
 .owl-item img{
     object-fit:cover;
     width: 100%;
@@ -502,6 +500,10 @@ a{
         display: flex;
         cursor: pointer;
     }
+
+    .navbar.show .navbar-hamburguer{
+      display: none;
+    }
     
     
 
@@ -511,9 +513,20 @@ a{
         position: absolute;
         display: flex;
         width: 100vw;
-        background-color: var(--black-color);
+        background: var(--black-color);
         text-align: start;
         justify-content: center;
+        animation: navbarShow 0.2s ease;
+        
+    }
+
+    @keyframes navbarShow {
+        0%{
+            background-color: transparent;
+        }
+        100%{
+            background: var(--black-color);
+        }
     }
 
     .navbar.show ul{
