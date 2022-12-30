@@ -90,6 +90,9 @@ a{
     
 }
 
+.navbar-hamburguer{
+    display: none;
+}
 
 .container{
     width: 100vw;
@@ -489,6 +492,11 @@ a{
     .navbar-content{
         margin: 20px 50px;
         justify-content: space-between;
+    }
+
+    .navbar-hamburguer{
+        display: flex;
+        cursor: pointer;
     }
 
 
