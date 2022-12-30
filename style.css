@@ -478,6 +478,19 @@ a{
         border-bottom: 3px solid var(--black-color);
     }
 
+    .hamburguer{
+        display: flex!important;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .navbar-content{
+        margin: 20px 50px;
+        justify-content: space-between;
+    }
+
 
 
     
