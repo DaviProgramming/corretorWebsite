@@ -167,11 +167,13 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(black,black);
+    background-color: var(--black-color);
     width: 250px;
     height: 300px;
     border-radius: 50px;
 }
+
+
 
 .img-apresentation img{
     width: 100%;
@@ -403,4 +405,41 @@ a{
 
 .social-medias .fa-facebook-f{
     font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 780px) {
+    .navbar-texts{
+        display: none;
+    }
+
+    .title-content h1{
+        font-size: 1.5rem;
+    }
+
+    .container.about .container-content{
+        flex-direction: column;
+    }
+
+    .left-side{
+        margin-top: 15vh;
+    }
+
+    .container.jobs{
+       margin-top: 14vh;
+    }
+
+    .card-infos p{
+        display: flex;
+    }
+
+    .container.contato h1{
+        margin-top: 75vh;
+    }
+
+    .infos{
+        flex-direction: column;
+    }
+
+    
 }
