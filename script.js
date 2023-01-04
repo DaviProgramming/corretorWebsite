@@ -103,7 +103,7 @@ const containerConfig = {
 const loader = {
     startLoader(){
         let body = document.querySelector("body");
-        body.classList.add('loader');
+      
 
         setTimeout(()=>{
             body.classList.remove('loader');
