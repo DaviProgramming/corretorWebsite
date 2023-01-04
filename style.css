@@ -55,13 +55,12 @@ body.body-loader{
  body.body-loader .loader-animations{
      width: 100vw;
      height: 100vh;
-     z-index: 10;
      position: fixed;
      background: var(--black-color);
-     z-index: 5;
      display: flex;
      justify-content: center;
      align-items: center;
+     z-index: 10;
  }
 
 body.body-loader .loader-animations img{
