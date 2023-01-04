@@ -55,8 +55,8 @@ const loader = {
         let body = document.querySelector("body");
        
         setTimeout(()=>{
-            body.classList.remove('loader');
-        }, 1000)
+            body.classList.remove('body-loader');
+        }, 1500)
 
     }
 }

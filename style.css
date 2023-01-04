@@ -45,29 +45,32 @@ a{
     text-decoration: none;
 }
 
-body.loader{
+body.body-loader{
+    max-height: 100vh;
     overflow: hidden;
-}
+ }
+ 
 
-body.loader .loader-animation{
-    z-index: 10;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background: var(--black-color);
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-body.loader .loader-animation img{
-    animation: loaderAnimation 1s ease;
+ body.body-loader .loader-animations{
+     width: 100vw;
+     height: 100vh;
+     z-index: 10;
+     position: fixed;
+     background: var(--black-color);
+     z-index: 5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+body.body-loader .loader-animations img{
+    animation: loaderAnimation 1.5s ease;
     width: 300px;
 }
 
 
-.loader-animation {
+.loader-animations {
     display: none;
 }
 
@@ -80,6 +83,8 @@ body.loader .loader-animation img{
         transform: rotateY(0deg);
     }
 }
+
+
 
 .navbar{
     position: fixed;
@@ -152,6 +157,7 @@ body.loader .loader-animation img{
 }
 
 .container{
+    
     position: relative;
     min-width: 100vw;
     min-height: 100vh;
@@ -160,6 +166,8 @@ body.loader .loader-animation img{
     align-items: center;
     overflow: hidden;
 }
+
+
 
 .container.home{
     background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)), url(./assets/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg);

@@ -106,7 +106,7 @@ const loader = {
       
 
         setTimeout(()=>{
-            body.classList.remove('loader');
+            body.classList.remove('body-loader');
         }, 1000)
 
     }
