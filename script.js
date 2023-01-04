@@ -7,7 +7,9 @@ window.addEventListener('scroll', () => {
 })
 
 window.addEventListener('load', () => {
+    loader.startLoader();
     containerConfig.getContainer();
+    
 })
 
 const startInteractive = () => {
@@ -96,6 +98,18 @@ const containerConfig = {
             
         }
     },
+}
+
+const loader = {
+    startLoader(){
+        let body = document.querySelector("body");
+        body.classList.add('loader');
+
+        setTimeout(()=>{
+            body.classList.remove('loader');
+        }, 1000)
+
+    }
 }
 
 

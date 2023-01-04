@@ -1,3 +1,7 @@
+window.addEventListener('load', () =>{
+    loader.startLoader();
+})
+
 window.addEventListener('scroll', () => {
     let navbar = document.querySelector('.navbar');
 
@@ -5,6 +9,8 @@ window.addEventListener('scroll', () => {
 
     navbar.classList.toggle('scroll', windowPosition);
 })
+
+
 
 const startInteractive = () => {
     let getButtonNavbar = document.querySelectorAll('.navbar-link');
@@ -41,6 +47,18 @@ const NavbarConfig = {
     mobileClose() {
         let navbar = document.querySelector('.navbar');
         navbar.classList.remove('show');
+    }
+}
+
+const loader = {
+    startLoader(){
+        let body = document.querySelector("body");
+        body.classList.add('loader');
+
+        setTimeout(()=>{
+            body.classList.remove('loader');
+        }, 1000)
+
     }
 }
 
