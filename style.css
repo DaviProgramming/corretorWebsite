@@ -371,8 +371,12 @@ body.body-loader .loader-animations img{
     color: var(--black-color);
 }
 
-.container.contato i, .container.contato h5 a, .container.contato h5{
+.container.contato i, .container.contato h5 a, .container.contato h5, .container.contato h4{
     color: var(--black-color);
+}
+
+.container.contato i:hover, .container.contato h5 a:hover, .container.contato h5:hover, .container.contato h4:hover{
+    color: var(--primary-color);
 }
 
 
