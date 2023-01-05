@@ -371,6 +371,10 @@ body.body-loader .loader-animations img{
     color: var(--black-color);
 }
 
+.container.contato i, .container.contato h5 a, .container.contato h5{
+    color: var(--black-color);
+}
+
 
 .owl-item img{
     object-fit:cover;
