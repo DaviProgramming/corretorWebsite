@@ -12,8 +12,8 @@
   --colors: rgb(212, 212, 212);
 }
 
-body{
-    background: var(--black-color);
+body {
+  background: var(--white-color);
 }
 
 .navbar {
@@ -21,7 +21,8 @@ body{
 }
 
 main {
-  background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)), url(./assets/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
+    url(./assets/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg);
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -29,7 +30,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 5vh;
 }
 
 .hero .hero-logo {
@@ -48,45 +48,44 @@ main {
   animation: arrowDown 1s infinite ease-in-out;
 }
 
-.container.contato i, .container.contato h5 a, .container.contato h5, .container.contato h4{
-    color: var(--white-color);
+.container.contato i,
+.container.contato h5 a,
+.container.contato h5,
+.container.contato h4 {
+  color: var(--black-color);
 }
 
-.info-containter h3{
-    color: var(--white-color);
+.info-containter h3 {
+  color: var(--black-color);
 }
 
 @keyframes arrowDown {
-    0%{
-        transform: translateY(-10px);
-    }
+  0% {
+    transform: translateY(-10px);
+  }
 
-    100%{
-        transform: translateY(10px);
-    }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .hero img {
   width: 100%;
-  
 }
 
 .hero h1 {
-  
   font-size: 3rem;
   margin-bottom: -20px;
 }
 
 .hero h4 {
-  
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 .container.enterprise {
-    border-top: 10px solid var(--white-color);
-  border-radius: 15%;
-  background: var(--black-color);
+  padding-top: 150px;
+    background: var(--black-color);
   padding-top: 0px;
   color: var(--white-color);
 }
@@ -160,7 +159,6 @@ main {
 }
 
 .enterprise ~ .enterprise {
-  
   margin-top: 20vh;
 }
 
