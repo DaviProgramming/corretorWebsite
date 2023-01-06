@@ -1,117 +1,167 @@
 @import url(./style.css);
 
-:root{
+:root {
+  --font-family: "Source Sans Pro", sans-serif;
 
-    --font-family: 'Source Sans Pro', sans-serif;
+  --primary-color: #4592af;
+  --secundary-color: #3e3939;
 
-    --primary-color: #4592AF;
-    --secundary-color: #3E3939;
-
-    --black-color: #2C2727;
-    --white-color: #F6F4F4;
-    --grey-color:#d4d4d4;
-
+  --black-color: #272727;
+  --white-color: #f6f4f4;
+  --grey-color: #d4d4d4;
+  --colors: rgb(212, 212, 212);
 }
 
+body{
+    background: var(--black-color);
+}
 
-
-.navbar{
-    top: 0;
+.navbar {
+  top: 0;
 }
 
 main {
-   
-padding: 50px 0px;
-    
+  background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.699)), url(./assets/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5vh;
 }
 
-
-.container.enterprise{
-    padding-top: 0px;
+.hero .hero-logo {
+  width: 350px;
 }
 
-.enterprise .container-content{
-   
-    display: flex;
-    flex-direction: column;
+.hero-texts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.enterprise h1{
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: var(--black-color);
+.hero-texts i {
+  color: var(--white-color);
+  font-size: 1.9rem;
+  animation: arrowDown 1s infinite ease-in-out;
 }
 
-.enterprise .text-infos{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100vw;
-    min-height: 30vh;
-    background-color: var(--black-color);
+@keyframes arrowDown {
+    0%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
 }
 
-.owl-item img{
-    object-fit: fill;
-    width: 100%;
-    height:50vh;
-    background: var(--black-color); 
+.hero img {
+  width: 100%;
+  
 }
 
-.enterprise span{
-    display: block;
-}
-.enterprise .text-infos{
-    font-size: 1.2rem;
-    align-items: center;
-    padding: 50px;
+.hero h1 {
+  
+  font-size: 3rem;
+  margin-bottom: -20px;
 }
 
-.enterprise .text-infos h3{
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0;
+.hero h4 {
+  
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-.enterprise .text-infos p{
-    font-size: 1rem;
-    width: 70%;
-    height:60px;
-    padding: 20px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+.container.enterprise {
+    border-top: 10px solid var(--white-color);
+  border-radius: 15%;
+  background: var(--black-color);
+  padding-top: 0px;
+  color: var(--white-color);
 }
 
-
-
-.text-infos p::-webkit-scrollbar{
-    width: 10px;
-    background-color: var(--white-color);
-    border-radius: 30px;
+.enterprise .container-content {
+  display: flex;
+  flex-direction: column;
 }
 
-.text-infos p::-webkit-scrollbar-thumb{
-    background-color: var(--primary-color);
-    border-radius: 30px;
+.enterprise h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: var(--white-color);
 }
 
-.card img{
-    -webkit-filter: brightness(0.7);
+.enterprise .text-infos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 30vh;
+  background-color: var(--black-color);
 }
 
-.enterprise ~ .enterprise{
-    margin-top: 100px;
+.owl-item img {
+  object-fit: fill;
+  width: 100%;
+  height: 50vh;
+  background: var(--black-color);
 }
 
+.enterprise span {
+  display: block;
+}
+.enterprise .text-infos {
+  font-size: 1.2rem;
+  align-items: center;
+  padding: 50px;
+}
+
+.enterprise .text-infos h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.enterprise .text-infos p {
+  font-size: 1rem;
+  width: 70%;
+  height: 60px;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.text-infos p::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+
+.text-infos p::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
+.card img {
+  -webkit-filter: brightness(0.7);
+}
+
+.enterprise ~ .enterprise {
+  
+  margin-top: 20vh;
+}
 
 @media screen and (max-width: 780px) {
-    .enterprise h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .enterprise .text-infos h3{
-        font-size: 1.3rem;
-    }
+  .enterprise h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .enterprise .text-infos h3 {
+    font-size: 1.3rem;
+  }
 }
