@@ -48,6 +48,14 @@ main {
   animation: arrowDown 1s infinite ease-in-out;
 }
 
+.container.contato i, .container.contato h5 a, .container.contato h5, .container.contato h4{
+    color: var(--white-color);
+}
+
+.info-containter h3{
+    color: var(--white-color);
+}
+
 @keyframes arrowDown {
     0%{
         transform: translateY(-10px);
