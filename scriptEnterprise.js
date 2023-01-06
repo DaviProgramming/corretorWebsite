@@ -67,6 +67,7 @@ $(document).ready(function () {
        
         loop: true,
         dots: false,
+        nav: true,
         responsive: {
             0: {
                 items: 1
