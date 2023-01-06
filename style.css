@@ -707,5 +707,11 @@ i:hover, i:focus{
     .social-medias{
         margin-bottom: 10vh;
     }
+
+    .container.contato h1{
+        margin-top: 20vh;
+    }
+
+   
     
 }
