@@ -602,6 +602,8 @@ i:hover, i:focus{
     font-weight: 600;
 }
 
+
+
 @media screen and (max-width: 780px) {
     .navbar-texts{
         display: none;

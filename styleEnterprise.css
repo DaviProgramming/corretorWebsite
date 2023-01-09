@@ -220,6 +220,10 @@ main {
     background: transparent;
 }
 
+.enterprise ~ .imobiliaria{
+  margin-top: 20vh;
+}
+
 @media screen and (max-width: 780px) {
   .enterprise h1 {
     font-size: 2rem;
