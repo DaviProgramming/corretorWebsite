@@ -9,7 +9,7 @@
   --black-color: #272727;
   --white-color: #f6f4f4;
   --grey-color: #d4d4d4;
-  --colors: rgb(212, 212, 212);
+ 
 }
 
 body {
@@ -39,6 +39,8 @@ main {
 .hero-texts {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -46,6 +48,10 @@ main {
   color: var(--white-color);
   font-size: 1.9rem;
   animation: arrowDown 1s infinite ease-in-out;
+}
+
+.hero a.button{
+  width: 150px;
 }
 
 .container.contato i,

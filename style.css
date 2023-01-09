@@ -571,7 +571,36 @@ i:hover, i:focus{
     color: var(--primary-color);
 }
 
+.container.imobiliaria {
+    background: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 
+.imobiliaria .container-content{
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container.imobiliaria .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+.container.imobiliaria .logo img{
+    width: 100%;
+   
+}
+
+.imobiliaria h1{
+   
+    font-size: 3rem;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 780px) {
     .navbar-texts{
@@ -609,7 +638,7 @@ i:hover, i:focus{
     }
 
     .card-infos p{
-        display: flex;
+       
     }
 
     .container.contato h1{
