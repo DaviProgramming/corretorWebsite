@@ -1,5 +1,6 @@
 window.addEventListener('load', () =>{
     loader.startLoader();
+    containerConfig.getContainer();
 })
 
 window.addEventListener('scroll', () => {
@@ -59,6 +60,50 @@ const loader = {
         }, 1500)
 
     }
+}
+
+const containerConfig = {
+    getContainer() {
+        let containers = document.querySelectorAll('.container');
+        containers.forEach(container => container.addEventListener('mouseover', () => { this.changeContainer(container) }));
+    },
+    changeContainer(container) {
+        NavbarConfig.removeActive();
+        let containerReceive = container.classList[1];
+       
+        switch(containerReceive){
+            
+            case "hero":{
+                let aHref = document.querySelector('.navbar-link a[href="#home"]');
+                let li = aHref.parentNode;
+                NavbarConfig.changeButton(li);
+                break;
+            }
+
+            case "enterprise":{
+                let aHref = document.querySelector('a[href="#empreendimentos"]');
+                let li = aHref.parentNode;
+                NavbarConfig.changeButton(li);
+                break;
+            }
+
+
+            case "contato":{
+                let aHref = document.querySelector('a[href="#contact"]');
+                let li = aHref.parentNode;
+                NavbarConfig.changeButton(li);
+                break;
+            }
+
+            case "imobiliaria":{
+                let aHref = document.querySelector('a[href="#imobiliaria"]');
+                let li = aHref.parentNode;
+                NavbarConfig.changeButton(li);
+                break;
+            }
+            
+        }
+    },
 }
 
 $(document).ready(function () {
