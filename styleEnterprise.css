@@ -171,54 +171,7 @@ main {
   margin-top: 20vh;
 }
 
-.owl-nav {
-  width: 100vw;
-}
 
-.owl-nav {
-  position: absolute;
-  top: 40%;
-}
-
-.owl-nav .owl-prev {
-  position: absolute;
-  left: 15px;
-  font-size: 3rem;
-}
-
-.owl-prev span,
-.owl-next span {
-  font-family: var(--font-family);
-  font-size: 3rem;
-  background: var(--white-color);
-  color: var(--black-color);
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  line-height: 35px;
-  box-shadow: 0px 0px 15px var(--black-color);
-}
-
-.owl-prev span:hover,
-.owl-next span:hover {
-  transition: 0.4s;
-  background: var(--black-color);
-  color: var(--white-color);
-}
-
-.owl-nav .owl-next {
-  position: absolute;
-  right: 25px;
-}
-
-.owl-carousel .owl-nav button.owl-next:hover,
-.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel button.owl-dot {
-  background: transparent;
-}
 
 .enterprise ~ .imobiliaria {
   margin-top: 20vh;

@@ -272,6 +272,9 @@ body.body-loader .loader-animations img{
     width: 250px;
     height: 300px;
     border-radius: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.301)), url(./assets/marcos.jpg);
+    background-size: cover;
+    background-position: -210px center;
 }
 
 
@@ -286,7 +289,7 @@ body.body-loader .loader-animations img{
     align-items: center;
     flex-direction: column;
     
-    width: 50%;
+    width: 40%;
     height: 100%;
     color: var(--black-color);
 }
@@ -387,6 +390,55 @@ body.body-loader .loader-animations img{
     background: var(--black-color); 
 }
 
+.owl-nav {
+    width: 100vw;
+  }
+  
+  .owl-nav {
+    position: absolute;
+    top: 40%;
+  }
+  
+  .owl-nav .owl-prev {
+    position: absolute;
+    left: 15px;
+    font-size: 3rem;
+  }
+  
+  .owl-prev span,
+  .owl-next span {
+    font-family: var(--font-family);
+    font-size: 3rem;
+    background: var(--white-color);
+    color: var(--black-color);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 35px;
+    box-shadow: 0px 0px 15px var(--black-color);
+  }
+  
+  .owl-prev span:hover,
+  .owl-next span:hover {
+    transition: 0.4s;
+    background: var(--black-color);
+    color: var(--white-color);
+  }
+  
+  .owl-nav .owl-next {
+    position: absolute;
+    right: 25px;
+  }
+  
+  .owl-carousel .owl-nav button.owl-next:hover,
+  .owl-carousel .owl-nav button.owl-prev:hover,
+  .owl-carousel button.owl-dot {
+    background: transparent;
+  }
+
 .card-infos{
     position: absolute;
     padding: 15px;
@@ -406,13 +458,13 @@ body.body-loader .loader-animations img{
 
 .card-infos p{
     opacity: 0;
-    visibility: hidden;
+    display: none;
 }
 
 .card:hover p{
    
     opacity: 1;
-    visibility:visible;
+    display: flex;
     transition: opacity 0.4s;
 }
 
@@ -623,14 +675,27 @@ i:hover, i:focus{
         flex-direction: column;
     }
 
-    .img-apresentation{
-        height: 150px;
+    .text-apresentation{
+        width: 60%;
     }
 
-    .container.about p{
+    .text-apresentation h3{
+        white-space: nowrap;
         text-align: center;
     }
 
+    .text-apresentation p{
+       
+        text-align: center;
+    }
+
+    .img-apresentation{
+        height: 250px;
+        background-position: -190px;
+    }
+
+
+   
     .left-side{
         margin-top: 15vh;
     }

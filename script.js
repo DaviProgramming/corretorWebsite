@@ -117,6 +117,7 @@ const loader = {
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         autoHeight: false,
+        nav:true,
         loop: true,
         dots: false,
         responsive: {
